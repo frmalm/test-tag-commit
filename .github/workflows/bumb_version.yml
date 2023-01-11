@@ -1,11 +1,11 @@
-name :
-  name: Bump version
-  on:
-    push:
-      branches:
-        - master
-        - main
-        -
+
+name: Bump version
+on:
+  push:
+    branches:
+      - master
+      - main
+        
 jobs:
   build:
     runs-on: ubuntu-22.04
