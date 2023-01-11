@@ -14,9 +14,3 @@ jobs:
         with:
           fetch-depth: '0'
 
-      - name: Bump version and push tag
-        uses: frmalm/tag-action@main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GIT_HUB_TOKEN }}
-          prefix: my-prefix
-          major: 11
