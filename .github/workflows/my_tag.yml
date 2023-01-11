@@ -16,6 +16,6 @@ jobs:
 
       - uses: frmalm/tag-action@main
         with:
-          GITHUB_TOKEN: ${{ secrets.GIT_HUB_TOKEN }}
+          token: ${{ secrets.GIT_HUB_TOKEN }}
           prefix: my-prefix
           major: 11
