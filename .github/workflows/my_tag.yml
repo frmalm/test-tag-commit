@@ -15,7 +15,7 @@ jobs:
           fetch-depth: '0'
 
       - name: Bump version and push tag
-        uses: link-/tag-action@main
+        uses: tag-action@main
         env:
           token: ${{ secrets.GIT_HUB_TOKEN }}
           prefix: my-prefix
