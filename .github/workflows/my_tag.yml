@@ -8,13 +8,13 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
         with:
           fetch-depth: '0'
 
-      - uses: frmalm/tag-action@main
+      - uses: link-/tag-action@main
         env:
           GITHUB_TOKEN: ${{ secrets.GIT_HUB_TOKEN }}
           prefix: my-prefix
