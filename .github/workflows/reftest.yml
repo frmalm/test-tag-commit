@@ -1,0 +1,16 @@
+name: ref ${{ github.event.inputs.ref }
+on:
+   workflow_dispatch:
+    inputs:
+      ref:
+        type: string
+        description: Release tag, branch, commit
+        default: main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+          ${{ github.event.inputs.ref }
